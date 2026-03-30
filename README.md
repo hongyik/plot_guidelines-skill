@@ -1,6 +1,6 @@
 ## academic-plot-styler
 
-This repository contains the `academic-plot-styler` Cursor skill, which enforces a consistent, journal-ready plotting style for scientific figures.
+This repository contains the `academic-plot-styler` skill, which enforces a consistent, journal-ready plotting style for scientific figures.
 
 The skill is defined in `SKILL.md` and is designed to be **automatically applied** whenever you (or an AI agent) generate plotting code in Python/Matplotlib or Matlab.
 
@@ -17,8 +17,4 @@ The skill is defined in `SKILL.md` and is designed to be **automatically applied
 
 See `SKILL.md` for the full specification and language-specific code snippets.
 
-## Usage
-
-- **In Cursor**: Add this repo as a skill in your Cursor setup so that the assistant can automatically apply these guidelines whenever it generates plots.
-- **In your own code**: Copy the configuration snippets from `SKILL.md` into your Python/Matplotlib or Matlab plotting scripts to standardize your figures manually.
 
