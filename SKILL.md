@@ -31,13 +31,15 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({
     "text.usetex": True,
     "font.family": "serif",
-    "font.size": 12,
+    "font.size": 24,
     "axes.grid": False,
     "lines.linewidth": 2.0,
-    "legend.frameon": False  # Crucial: Removes the legend box
+    "legend.frameon": False,  # Crucial: Removes the legend box
+    "figure.facecolor": "white",
+    "savefig.facecolor": "white",
 })
 
-# For 1:1 ratio: fig, ax = plt.subplots(figsize=(5, 5))
+# For 1:1 ratio (square): fig, ax = plt.subplots(figsize=(5, 5)); ax.set_box_aspect(1)
 # For colorbar: plt.colorbar()
 # For legend: plt.legend() # frameon=False is already set globally
 ```
@@ -51,8 +53,8 @@ set(groot, 'defaultLegendInterpreter','latex');
 set(groot, 'defaultTextInterpreter','latex');
 
 % Current axes settings
-set(gca, 'FontSize', 12, 'LineWidth', 2, 'Box', 'on');
-axis square; % Mandatory 1:1 ratio
+set(gca,'linewidth',2,'fontsize',24,'ticklabelinterpreter','latex');
+pbaspect([1,1,1])
 grid off;
 
 % Legend without frame
@@ -60,4 +62,5 @@ lgd = legend();
 set(lgd, 'EdgeColor', 'none', 'Color', 'none'); 
 
 % colorbar;
+set(gcf,'color','white');
 ```

@@ -17,4 +17,3 @@ The skill is defined in `SKILL.md` and is designed to be **automatically applied
 
 See `SKILL.md` for the full specification and language-specific code snippets.
 
-
