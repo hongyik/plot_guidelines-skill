@@ -34,8 +34,11 @@ plt.rcParams.update({
     "font.size": 24,
     "axes.grid": False,
     "lines.linewidth": 2.0,
-    "legend.frameon": False,  # Crucial: Removes the legend box
     "legend.fontsize": 12,
+    "axes.labelsize": 12,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+    "legend.frameon": False,
     "figure.facecolor": "white",
     "savefig.facecolor": "white",
 })
