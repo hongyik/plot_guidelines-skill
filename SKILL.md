@@ -35,6 +35,7 @@ plt.rcParams.update({
     "axes.grid": False,
     "lines.linewidth": 2.0,
     "legend.frameon": False,  # Crucial: Removes the legend box
+    "legend.fontsize": 12,
     "figure.facecolor": "white",
     "savefig.facecolor": "white",
 })
@@ -59,7 +60,7 @@ grid off;
 
 % Legend without frame
 lgd = legend();
-set(lgd, 'EdgeColor', 'none', 'Color', 'none'); 
+set(lgd, 'FontSize', 12, 'EdgeColor', 'none', 'Color', 'none'); 
 
 % colorbar;
 set(gcf,'color','white');
